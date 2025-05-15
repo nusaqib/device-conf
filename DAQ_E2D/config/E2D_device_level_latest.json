@@ -1,0 +1,1667 @@
+{
+	"database_version": 15,
+	"system": {
+		"unit_name": "unit_name",
+		"time_zone": 4,
+		"time_mode": 1,
+		"salt": "8b60bc8681fbe99247039b594da14048",
+		"time_format": 2,
+		"enable_daylight_saving": 0,
+		"ntp_server": "tic.lbl.gov",
+		"ntp_frequency": 5,
+		"logout_time": 0,
+		"serial_logout_time": 10,
+		"add_time_stamp_email_alerts": 0,
+		"add_time_stamp_sms_alerts": 0,
+		"language": 0,
+		"remote_serial_port_enable": 0,
+		"remote_serial_port_speed": 7,
+		"remote_serial_port_format": 0,
+		"graph_disable": 0,
+		"di_poll_freq": 0,
+		"siren_timeout": 0,
+		"holiday_entry_count": 0,
+		"holiday_list": []
+	},
+	"enterprise": {
+		"product": "E-2D",
+		"name": "Unit Name",
+		"location": "Unit Location",
+		"contact": "Contact Person",
+		"phone": "Phone No",
+		"email": "emux-2@company.com",
+		"branch": "Branch",
+		"rack": "Rack",
+		"banner_message": "",
+		"enable_banner": 0
+	},
+	"gsm_modem": {
+		"flags": 0,
+		"groups": 0,
+		"sms_format": 0
+	},
+	"sms_relay": {
+		"enable_server": 0,
+		"enable_client": 0,
+		"ip_address": ""
+	},
+	"gsm_data": {
+		"enable": 0,
+		"primary_network": 0,
+		"dialstring": "",
+		"username": "",
+		"password": "",
+		"password_enc": "",
+		"password_type": 1,
+		"apn": ""
+	},
+	"network": {
+		"ip_mode": 0,
+		"enable_ssh": 1,
+		"enable_telnet": 0,
+		"smtp_require_authentication": 0,
+		"http_port": 80,
+		"https_port": 443,
+		"smtp_port": 25,
+		"web_timeout": 20,
+		"enable_http": 0,
+		"ip_address": "192.168.1.21",
+		"subnet_mask": "255.255.255.0",
+		"default_gateway": "192.168.1.1",
+		"preferred_dns": "192.168.1.2",
+		"alternate_dns": "192.168.1.3",
+		"smtp_server_type": 0,
+		"smtp_server": "",
+		"smtp_username": "",
+		"smtp_password": "",
+		"smtp_pass_enc": "",
+		"smtp_pass_type": 1,
+		"enable_snmp_agent": 2,
+		"enable_snmp_trap": 0,
+		"snmp_port": 161,
+		"snmp_read_write": "public",
+		"snmp_read_write_enc": "b6e0f7b044d7612708cae5f6520dcd03c5bac73290e1dd6d37c26ff929909d02c0d9873b7a134a79df591f93c54a3711c665070dc00ae8ade291eff36595f701",
+		"snmp_read_write_type": 1,
+		"snmp_readonly": "public",
+		"snmp_read_only_enc": "d53db0808cf8109d82a8bea0cac16603761ac4a4996838e45f018028b87b9eb23b2901516196e95cb41bd7482740b4643450db7dc994f120c6be3c0a6fb54fd6",
+		"snmp_read_only_type": 1,
+		"ipv6_config": {
+			"ip_mode": 3,
+			"ip_address": "",
+			"secondary_ip_address": "",
+			"gateway": "",
+			"tunnel_6to4": 0,
+			"remote_relay": "",
+			"local_ipv4_address": ""
+		},
+		"smtp_enc_type": 0,
+		"enable_modbus": 0,
+		"modbus_port": 502,
+		"dns_timeout": 1,
+		"smtp_require_xoauth2": 0,
+		"enable_vlan": 0,
+		"enable_security": 1,
+		"secure_pw_only": 0,
+		"vlan_id": 0,
+		"console_timeout": 5,
+		"mqtt_enable": 0,
+		"mqtt_version": 4,
+		"mqtt_client_id": "80001F8803000C820E1034",
+		"mqtt_server_ip": "192.168.1.1",
+		"mqtt_port": 1883,
+		"mqtt_qos": 1,
+		"mqtt_ssl": 0,
+		"mqtt_cert_verify": 0,
+		"mqtt_pub_interval": 30,
+		"mqtt_interval_unit": 0,
+		"mqtt_pub_type": 0,
+		"mqtt_topic": "ExD000C820E1034",
+		"mqtt_username": "",
+		"mqtt_password": "",
+		"mqtt_pass_enc": "",
+		"mqtt_pass_type": 1
+	},
+	"ddns": {
+		"enable": 0,
+		"ssl": 0,
+		"pad1": "e",
+		"period": 0,
+		"provider": "",
+		"username": "",
+		"password": "",
+		"password_enc": "",
+		"password_type": 1,
+		"hostname": ""
+	},
+	"email_config": {
+		"disable_enterprise": 0,
+		"disable_location": 0,
+		"disable_branch": 0,
+		"disable_rack": 0,
+		"disable_group": 0,
+		"disable_contact": 0
+	},
+	"mms_config": {
+		"proxy_port": 0,
+		"apn": "",
+		"center": "",
+		"proxy": ""
+	},
+	"users": [
+		{
+			"id": 0,
+			"valid_user": 1,
+			"enabled": 1,
+			"is_admin": 1,
+			"username": "alsuctrladmin",
+			"password": "Ymb0rDAf8NLMO9\/jIzyvWA==",
+			"passwordSha": "97ByZvLxspWT+4VQvFb8a6BDSRNOE6nUmXbuSF7\/r1k=",
+			"hash_type": 1,
+			"title": "",
+			"company": "",
+			"department": "",
+			"groups": 0,
+			"enable_email_alerts": 0,
+			"email_address": "",
+			"email_address_2": "",
+			"email_address_3": "",
+			"email_address_4": "",
+			"enable_snmp": 0,
+			"snmp_syslog_address": "",
+			"syslog_port": 514,
+			"enable_syslog_alerts": 0,
+			"enable_sms": 0,
+			"sms_number": ["","","",""],
+			"last_login_time": 1251766960,
+			"sun": [4294967295,4294967295,4294967295],
+			"mon": [4294967295,4294967295,4294967295],
+			"tue": [4294967295,4294967295,4294967295],
+			"wed": [4294967295,4294967295,4294967295],
+			"thu": [4294967295,4294967295,4294967295],
+			"fri": [4294967295,4294967295,4294967295],
+			"sat": [4294967295,4294967295,4294967295],
+			"hol": [4294967295,4294967295,4294967295],
+			"authorization_protocol": 2,
+			"privacy_protocol": 2,
+			"authorization_passphrase": "alsU4evR!",
+			"auth_pp_enc": "56a51f1317ff25f90b342af89b76f17664d82146d2f922e4a9c8c4806dfe3ac416c658bc38076e73313857b652858b97267831b430c15625e456c82ab4c350e2",
+			"auth_pp_type": 1,
+			"privacy_passphrase": "alsU4evR!",
+			"priv_pp_enc": "32b36cb9aa8851794f51910e6707b624593c1a7dc97a37c4242254f02345b6966e341d55d899636066f5d45a004962651bcfeb669dad61f9a4832f12af2c3ef8",
+			"priv_pp_type": 1,
+			"trap_type": 2,
+			"trap_port": 162,
+			"brief_email": 0,
+			"syslog_facility": 0,
+			"radius_user": 0,
+			"is_operator": 0,
+			"user_flags": 0,
+			"ldap_common_name": "",
+			"ldap_organization_unit": ""
+		}
+	],
+	"group_list": [
+		{
+			"name": "Group #01"
+		},
+		{
+			"name": "Group #02"
+		},
+		{
+			"name": "Group #03"
+		},
+		{
+			"name": "Group #04"
+		},
+		{
+			"name": "Group #05"
+		},
+		{
+			"name": "Group #06"
+		},
+		{
+			"name": "Group #07"
+		},
+		{
+			"name": "Group #08"
+		}
+	],
+	"security": {
+		"authentication_method": 0,
+		"pw_restriction": 0,
+		"min_pass_len": 0,
+		"server1": "",
+		"server2": "",
+		"ldap_type": 0,
+		"base_dn": ""
+	},
+	"ip_filter": [
+		{
+			"rule": "192.168.0.0\/32",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.0.1\/32",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.0.2\/32",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.0.3\/32",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.4.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.5.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.6.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.7.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.8.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.9.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.10.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.11.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.12.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.13.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "192.168.14.0\/24",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		},
+		{
+			"rule": "0.0.0.0\/0",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 1
+		}
+	],
+	"ip6_filter": [
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		},
+		{
+			"rule": "",
+			"drop": 0,
+			"enabled": 0,
+			"valid": 0
+		}
+	],
+	"cascade": {
+		"function": 0,
+		"address": "",
+		"group": 0,
+		"timeout": 2,
+		"flags": 0,
+		"alert": {
+			"enabled": 0,
+			"group": 0,
+			"renotify_time": 0,
+			"renotify_unit": 0,
+			"flags": 0,
+			"email_subject": "",
+			"cam_attached": 0
+		},
+		"slave": [
+			{
+				"enable": 0,
+				"type": 0,
+				"address": ""
+			},
+			{
+				"enable": 0,
+				"type": 0,
+				"address": ""
+			},
+			{
+				"enable": 0,
+				"type": 0,
+				"address": ""
+			},
+			{
+				"enable": 0,
+				"type": 0,
+				"address": ""
+			}
+		]
+	},
+	"oauth_cred": {
+		"refresh_token": "",
+		"valid": 0,
+		"flow_version": 1
+	},
+	"enable_chinese": 0,
+	"misc_config": {
+		"email_format": 0,
+		"log_export_fmt": 0,
+		"expanded_mem": 0,
+		"en_mb_fixed_addr": 0
+	},
+	"custom_sms_conf": {
+		"enabled": 0,
+		"return_msg": ""
+	},
+	"internal_sensor_list": [
+		{
+			"unique_index": 0,
+			"position": "",
+			"config": {
+				"sensor_id": 1,
+				"status": 1,
+				"description": "Internal Temperature",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"measurement_unit": 0,
+				"value_min": -40,
+				"value_max": 85,
+				"refresh_rate": 10,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": -100,
+				"lowest_reading_time": 0,
+				"highest_reading_time": 0,
+				"lowest_reading": 200,
+				"highest_reading": -100,
+				"enable_tamper_alert": 0,
+				"tamper_normal_status": 0,
+				"tamper_block_orelay": 0,
+				"normal_value": 0,
+				"lcd_source": 0,
+				"open": "",
+				"close": "",
+				"enable_graph": 0,
+				"graph_id": -1,
+				"alert": {
+					"group": 1,
+					"min_threshold": 10,
+					"max_threshold": 50,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 5,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"warning": {
+					"group": 0,
+					"min_threshold": 15,
+					"max_threshold": 45,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 3,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"assoc": {
+					"is_assoc_sensor": 0,
+					"assoc_sensor_type": "",
+					"assoc_type_id": 0,
+					"assoc_sensor_unit": "",
+					"assoc_min_level": 0,
+					"assoc_max_level": 0
+				},
+				"aclm": {
+					"peak_volt": 0,
+					"spikes": 0,
+					"swells": 0,
+					"sags": 0,
+					"surges": 0,
+					"record_since": 0,
+					"disconn_threshold_min": 0,
+					"disconn_threshold_max": 0,
+					"disconn_holdoff_time": 0,
+					"reconn_holdoff_time": 0,
+					"frequency": 0,
+					"current": 0,
+					"flags": 0,
+					"aclm_state_machine": {
+						"state_transition_time": 0,
+						"aclm_disconn_state": 0,
+						"relay_state": 0,
+						"set_command_parameters": 0
+					}
+				}
+			},
+			"schedule": {
+				"sun": [0,0,0],
+				"mon": [0,0,0],
+				"tue": [0,0,0],
+				"wed": [0,0,0],
+				"thu": [0,0,0],
+				"fri": [0,0,0],
+				"sat": [0,0,0],
+				"hol": [0,0,0]
+			}
+		},
+		{
+			"unique_index": 0,
+			"position": "",
+			"config": {
+				"sensor_id": 2,
+				"status": 1,
+				"description": "Internal Humidity",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"measurement_unit": 0,
+				"value_min": 0,
+				"value_max": 100,
+				"refresh_rate": 10,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": -100,
+				"lowest_reading_time": 0,
+				"highest_reading_time": 0,
+				"lowest_reading": 200,
+				"highest_reading": -100,
+				"enable_tamper_alert": 0,
+				"tamper_normal_status": 0,
+				"tamper_block_orelay": 0,
+				"normal_value": 0,
+				"lcd_source": 0,
+				"open": "",
+				"close": "",
+				"enable_graph": 0,
+				"graph_id": -1,
+				"alert": {
+					"group": 1,
+					"min_threshold": 10,
+					"max_threshold": 75,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 5,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"warning": {
+					"group": 0,
+					"min_threshold": 15,
+					"max_threshold": 70,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 3,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"assoc": {
+					"is_assoc_sensor": 0,
+					"assoc_sensor_type": "",
+					"assoc_type_id": 0,
+					"assoc_sensor_unit": "",
+					"assoc_min_level": 0,
+					"assoc_max_level": 0
+				},
+				"aclm": {
+					"peak_volt": 0,
+					"spikes": 0,
+					"swells": 0,
+					"sags": 0,
+					"surges": 0,
+					"record_since": 0,
+					"disconn_threshold_min": 0,
+					"disconn_threshold_max": 0,
+					"disconn_holdoff_time": 0,
+					"reconn_holdoff_time": 0,
+					"frequency": 0,
+					"current": 0,
+					"flags": 0,
+					"aclm_state_machine": {
+						"state_transition_time": 0,
+						"aclm_disconn_state": 0,
+						"relay_state": 0,
+						"set_command_parameters": 0
+					}
+				}
+			},
+			"schedule": {
+				"sun": [0,0,0],
+				"mon": [0,0,0],
+				"tue": [0,0,0],
+				"wed": [0,0,0],
+				"thu": [0,0,0],
+				"fri": [0,0,0],
+				"sat": [0,0,0],
+				"hol": [0,0,0]
+			}
+		},
+		{
+			"unique_index": 0,
+			"position": "",
+			"config": {
+				"sensor_id": 3,
+				"status": 1,
+				"description": "Input Voltage",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"measurement_unit": 0,
+				"value_min": 0,
+				"value_max": 12,
+				"refresh_rate": 10,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": -100,
+				"lowest_reading_time": 0,
+				"highest_reading_time": 0,
+				"lowest_reading": 200,
+				"highest_reading": -100,
+				"enable_tamper_alert": 0,
+				"tamper_normal_status": 0,
+				"tamper_block_orelay": 0,
+				"normal_value": 0,
+				"lcd_source": 0,
+				"open": "",
+				"close": "",
+				"enable_graph": 0,
+				"graph_id": -1,
+				"alert": {
+					"group": 1,
+					"min_threshold": 6.5,
+					"max_threshold": 9.5,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 5,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"warning": {
+					"group": 0,
+					"min_threshold": 7,
+					"max_threshold": 9,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 3,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"assoc": {
+					"is_assoc_sensor": 0,
+					"assoc_sensor_type": "",
+					"assoc_type_id": 0,
+					"assoc_sensor_unit": "",
+					"assoc_min_level": 0,
+					"assoc_max_level": 0
+				},
+				"aclm": {
+					"peak_volt": 0,
+					"spikes": 0,
+					"swells": 0,
+					"sags": 0,
+					"surges": 0,
+					"record_since": 0,
+					"disconn_threshold_min": 0,
+					"disconn_threshold_max": 0,
+					"disconn_holdoff_time": 0,
+					"reconn_holdoff_time": 0,
+					"frequency": 0,
+					"current": 0,
+					"flags": 0,
+					"aclm_state_machine": {
+						"state_transition_time": 0,
+						"aclm_disconn_state": 0,
+						"relay_state": 0,
+						"set_command_parameters": 0
+					}
+				}
+			},
+			"schedule": {
+				"sun": [0,0,0],
+				"mon": [0,0,0],
+				"tue": [0,0,0],
+				"wed": [0,0,0],
+				"thu": [0,0,0],
+				"fri": [0,0,0],
+				"sat": [0,0,0],
+				"hol": [0,0,0]
+			}
+		}
+	],
+	"sensor_link_list": [
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		},
+		{
+			"index_type": 0,
+			"size": 0,
+			"offset": 0,
+			"read_err_cnt": 0
+		}
+	],
+	"tac_sensor_list": [
+		{
+			"unique_index": 0,
+			"position": "",
+			"config": {
+				"sensor_id": 0,
+				"status": 0,
+				"description": "",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"measurement_unit": 0,
+				"value_min": 0,
+				"value_max": 0,
+				"refresh_rate": 0,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 0,
+				"log_period_unit": 0,
+				"last_alert_time": 0,
+				"last_alert_reading": 0,
+				"lowest_reading_time": 0,
+				"highest_reading_time": 0,
+				"lowest_reading": 0,
+				"highest_reading": 0,
+				"enable_tamper_alert": 0,
+				"tamper_normal_status": 0,
+				"tamper_block_orelay": 0,
+				"normal_value": 0,
+				"lcd_source": 0,
+				"open": "",
+				"close": "",
+				"enable_graph": 0,
+				"graph_id": -1,
+				"alert": {
+					"group": 0,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 0,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 0,
+					"renotify_time_unit": 0,
+					"flags": 0,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 0,
+					"assoc_orelay_return_normal_status": 0,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"warning": {
+					"group": 0,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 0,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 0,
+					"renotify_time_unit": 0,
+					"flags": 0,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 0,
+					"assoc_orelay_return_normal_status": 0,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				},
+				"assoc": {
+					"is_assoc_sensor": 0,
+					"assoc_sensor_type": "",
+					"assoc_type_id": 0,
+					"assoc_sensor_unit": "",
+					"assoc_min_level": 0,
+					"assoc_max_level": 0
+				},
+				"aclm": {
+					"peak_volt": 0,
+					"spikes": 0,
+					"swells": 0,
+					"sags": 0,
+					"surges": 0,
+					"record_since": 0,
+					"disconn_threshold_min": 0,
+					"disconn_threshold_max": 0,
+					"disconn_holdoff_time": 0,
+					"reconn_holdoff_time": 0,
+					"frequency": 0,
+					"current": 0,
+					"flags": 0,
+					"aclm_state_machine": {
+						"state_transition_time": 0,
+						"aclm_disconn_state": 0,
+						"relay_state": 0,
+						"set_command_parameters": 0
+					}
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		}
+	],
+	"digital_input_list": [
+		{
+			"config": {
+				"status": 3,
+				"description": "SMS1",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 0,
+				"refresh_rate": 10,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": 1,
+				"open": "Smoke Detected",
+				"close": "OK",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 1,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 1,
+					"renotify_time_unit": 1,
+					"flags": 0,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		},
+		{
+			"config": {
+				"status": 1,
+				"description": "WLS1",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"refresh_rate": 10,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 1251935724,
+				"last_alert_reading": 0,
+				"open": "OK",
+				"close": "Leak Detected",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 1,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 1,
+					"renotify_time_unit": 1,
+					"flags": 0,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		},
+		{
+			"config": {
+				"status": 0,
+				"description": "Digital Input #3",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"refresh_rate": 20,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": 255,
+				"open": "Open",
+				"close": "Closed",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 4,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		},
+		{
+			"config": {
+				"status": 0,
+				"description": "Digital Input #4",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"refresh_rate": 20,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": 255,
+				"open": "Open",
+				"close": "Closed",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 4,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		},
+		{
+			"config": {
+				"status": 0,
+				"description": "Digital Input #5",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"refresh_rate": 20,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": 255,
+				"open": "Open",
+				"close": "Closed",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 4,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		},
+		{
+			"config": {
+				"status": 0,
+				"description": "Digital Input #6",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"refresh_rate": 20,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": 255,
+				"open": "Open",
+				"close": "Closed",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 4,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		},
+		{
+			"config": {
+				"status": 0,
+				"description": "Digital Input #7",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"refresh_rate": 20,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": 255,
+				"open": "Open",
+				"close": "Closed",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 4,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		},
+		{
+			"config": {
+				"status": 0,
+				"description": "Digital Input #8",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"refresh_rate": 20,
+				"refresh_rate_unit": 0,
+				"add_to_data_log": 0,
+				"logging_period": 60,
+				"log_period_unit": 1,
+				"last_alert_time": 0,
+				"last_alert_reading": 255,
+				"open": "Open",
+				"close": "Closed",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 30,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 4,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			},
+			"schedule": {
+				"sun": [4294967295,4294967295,4294967295],
+				"mon": [4294967295,4294967295,4294967295],
+				"tue": [4294967295,4294967295,4294967295],
+				"wed": [4294967295,4294967295,4294967295],
+				"thu": [4294967295,4294967295,4294967295],
+				"fri": [4294967295,4294967295,4294967295],
+				"sat": [4294967295,4294967295,4294967295],
+				"hol": [4294967295,4294967295,4294967295]
+			}
+		}
+	],
+	"webcams": {
+		"en_cam_auth": 0,
+		"en_digest_auth": 0,
+		"config": [
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			},
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			},
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			},
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			},
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			},
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			},
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			},
+			{
+				"name": "",
+				"image": "",
+				"url_type": 0,
+				"link": "",
+				"refresh_rate": 0,
+				"add_to_view": 0,
+				"auth_username": "",
+				"auth_password": "",
+				"auth_password_enc": "",
+				"auth_password_type": 1
+			}
+		]
+	},
+	"out_relay_list": [
+		{
+			"config": {
+				"group": 255,
+				"description": "Output Relay #1",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"add_to_log": 0,
+				"send_email": 0,
+				"send_sms": 0,
+				"send_traps": 0,
+				"send_syslog": 0,
+				"enable_buzzer": 0,
+				"disable_alert": 1,
+				"enable_beacon_alarm": 0,
+				"email_subject": "Output Relay Activity",
+				"status": 1,
+				"open": "Active",
+				"close": "Inactive"
+			}
+		},
+		{
+			"config": {
+				"group": 255,
+				"description": "Output Relay #2",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"add_to_log": 0,
+				"send_email": 0,
+				"send_sms": 0,
+				"send_traps": 0,
+				"send_syslog": 0,
+				"enable_buzzer": 0,
+				"disable_alert": 1,
+				"enable_beacon_alarm": 0,
+				"email_subject": "Output Relay Activity",
+				"status": 1,
+				"open": "Active",
+				"close": "Inactive"
+			}
+		},
+		{
+			"config": {
+				"group": 255,
+				"description": "Output Relay #3",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"add_to_log": 0,
+				"send_email": 0,
+				"send_sms": 0,
+				"send_traps": 0,
+				"send_syslog": 0,
+				"enable_buzzer": 0,
+				"disable_alert": 1,
+				"enable_beacon_alarm": 0,
+				"email_subject": "Output Relay Activity",
+				"status": 1,
+				"open": "Active",
+				"close": "Inactive"
+			}
+		},
+		{
+			"config": {
+				"group": 255,
+				"description": "Output Relay #4",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"normal_status": 1,
+				"add_to_log": 0,
+				"send_email": 0,
+				"send_sms": 0,
+				"send_traps": 0,
+				"send_syslog": 0,
+				"enable_buzzer": 0,
+				"disable_alert": 1,
+				"enable_beacon_alarm": 0,
+				"email_subject": "Output Relay Activity",
+				"status": 1,
+				"open": "Active",
+				"close": "Inactive"
+			}
+		}
+	],
+	"ac_power_list": [
+		{
+			"config": {
+				"status": 1,
+				"last_alert_time": 0,
+				"description": "PWR1",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"message": "",
+				"alert": {
+					"group": 255,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 0,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 0,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			}
+		},
+		{
+			"config": {
+				"status": 1,
+				"last_alert_time": 1251766816,
+				"description": "PWR2",
+				"short_desc": "",
+				"led_checkbox": 0,
+				"message": "",
+				"alert": {
+					"group": 1,
+					"min_threshold": 0,
+					"max_threshold": 0,
+					"min_alert_delay": 0,
+					"min_alert_delay_unit": 0,
+					"renotify_time": 30,
+					"renotify_time_unit": 1,
+					"flags": 6,
+					"assoc_output_relay": 0,
+					"assoc_orelay_alert_status": 1,
+					"assoc_orelay_return_normal_status": 1,
+					"email_subject": "",
+					"camera_attached": 0,
+					"sms_message": "",
+					"global_alert_flag": 0
+				}
+			}
+		}
+	],
+	"event_log": {
+		"overflow_action": 2,
+		"show_new_first": 0,
+		"group": 1,
+		"flags": 64
+	},
+	"data_log": {
+		"overflow_action": 2,
+		"group": 1,
+		"flags": 0,
+		"last_entry_sent": -1,
+		"set_time": 0,
+		"start_time": 0,
+		"log_period_hour": 24,
+		"log_period_option": 0
+	},
+	"map": [
+		{
+			"enabled": 0,
+			"type": "",
+			"zoom": 0,
+			"width": 0,
+			"height": 0,
+			"name": ""
+		},
+		{
+			"enabled": 0,
+			"type": "",
+			"zoom": 0,
+			"width": 0,
+			"height": 0,
+			"name": ""
+		},
+		{
+			"enabled": 0,
+			"type": "",
+			"zoom": 0,
+			"width": 0,
+			"height": 0,
+			"name": ""
+		}
+	],
+	"led_count": 0
+}

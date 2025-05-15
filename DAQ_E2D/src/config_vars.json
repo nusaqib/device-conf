@@ -1,0 +1,13 @@
+{
+    "model_name": ["E2D", "E2D-24V"],
+    "traveler_name": "WLDS",
+    "device_type": "E2D--",
+    "ip": "192.168.1.22",
+    "subnet": "255.255.255.0",
+    "gateway": "192.168.1.1",
+    "firmware_version": "4.31",
+    "ams_status_id": 6,
+    "mac_scan_range": "192.168.1.0/24",
+    "mac_prefix": "00:0c:"
+  }
+  

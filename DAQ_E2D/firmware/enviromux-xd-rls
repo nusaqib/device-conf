@@ -1,0 +1,1376 @@
+E-16D/-5D/-2D FIRMWARE RELEASE NOTES
+Last Update 2025/03/13
+
+This listing provides the version number of the NTI E-16D / 
+E-5D / E-2D Enterprise Environment Monitoring System firmware 
+file, the date of the release, and a summary of the changes in that release.
+
+Note: If you have a unit with version 4.15 (or newer) installed, do not downgrade to an earlier version (before 4.15) of firmware or the internal temperature/humidity sensor will not work properly.
+
+Note: If you have a unit with version 4.0 (or newer) installed, this CANNOT be downgraded to an earlier version (before 4.0) of firmware.
+
+Note: It is recommended that any units upgrading from version 2.x or 3.x upgrade directly to version 4.5 or newer.
+
+4.32    2025/03/13
+	
+	Feature Add: Provides additional security for cross site scripting vulnerabilities, HSTS 
+		Requires custom SSL certificates (x509) and setting "Enable Network Security" to be fully effective.
+
+	Feature Change: Provides the ability to send all event log entries via SYSLOG not just alerts. 
+
+	Feature Change Improves the security of the SSH text menu connection.
+
+	Feature Change: Disables port 5919 by default; setting Cascade to "Ethernet Slave" will enable the port. 
+
+	Feature Change: Improves the translations for the Traditional Chinese language and fixed mismatches of some translations in Indonesian language Bahasa 
+
+	Bug Fix: Corrects a problem with controlling the Remote Output Relays on slave cascaded units from the master.
+
+	Bug Fix: Corrects a problem with Gmail or Microsoft 365 authorization being lost when the network settings are changed / saved.
+
+4.31    2024/11/12
+	
+	Feature Add: Option to enable/disable ports 5919, 6000 and 6001 has been added.
+	
+	Bug Fix: Device is slow sometimes when any Alerts "Notify Again Time" interval is too small
+		Minimum Notify Again Time is now 10 seconds.
+	
+	Bug Fix: USB Alert logs did not show complete string for sensor type in some cases
+	
+	Bug Fix: Sound Alert on Summary page did not work for Operator users 
+	
+	Bug Fix: Corrects a problem with downloading logs, stored on a USB flash drive, when using the webserver.
+
+4.30    2024/11/07
+
+	Feature Add: Support for new version of E-AV-LC sensor
+
+4.29   2024/08/29
+
+	Bug Fix: Corrects a problem with the fixed addressing of IP Sensors in MODBUS.
+	
+	Bug Fix: Corrects a problem with Microsoft OAUTH tokens updating properly.
+
+4.28   2024/08/15
+
+	Feature Add: SNMP sensor values can be converted from integer to float with a divisor.
+
+	Feature Add: Provides support for the PWR-RMT-RBT-C13 Remote Power Reboot Switch as an IP Sensor.
+		Note: This feature requires E-xD MIB files v1.23 (or newer) and the PWR-RMT-RBT-C13 to have firmware version 1.03 (or newer).
+
+	Feature Add: Provides support for custom status values for Digital Inputs on IP Sensors.
+
+	Feature Add: Provides support for OAUTH on Microsoft e-mail accounts.
+
+	Feature Add: Provides support for access to the E-1W and E-MICRO IP Sensors via HTTPS.
+
+	Bug Fix: Corrects a problem with sags and swells not being displayed for an E-ACLM-V/P sensor when the graph is disabled. Also corrects a problem with the E-ACLM-V Sensor not detecting sag/swell counts.
+
+	Bug Fix: Corrects a problem with the Modem Alerts Group selection not being saved properly.
+
+	Bug Fix: Corrects a problem with IP Camera capture not working on updated E-IPCAM-HNPOE firmware using Digest Authentication.
+
+	Bug Fix: Corrects a security bug in SSH.
+
+	Bug Fix: Corrects a problem when two email alerts occur simultaneously, the same email content is sent on both alerts.
+
+
+4.26   2024/04/04
+
+	Feature Add: Added support for E-CO2-THS Carbon Dioxide (CO2)/Temperature/Humidity/Dew Point Sensor.
+
+4.25   2024/02/14
+
+	Feature Add: Improved modem log messages and added a button to log connection status.
+	
+	Feature Add: Provides additional delimiter formats (Space Delimited, CSV, or Tab Delimited) for the USB datalog and event log.
+		Note: This needs to be set before the log entries are added, not during download.
+
+	Feature Change: Provides the ability to use the + character as a prefix in phone numbers.
+
+	Feature Change: Improves the resolution of the E-ACLM-3P480 sensors.
+
+	Bug Fix: Corrects a problem with the E-DCLM-6 showing wrong values as associated sensors for sensor # 3,4,5,6.
+
+	Bug Fix: Modem randomly fails to send SMS messages even if the signal is good.
+
+	Bug Fix: Corrects a problem with CMS errors when sending PDU SMS.
+
+	Bug Fix: SSH/RS232 Menu does not display modem data settings properly.
+
+	Bug Fix: Upgraded OPENSSH to version 8.3 to fix security issues.
+
+	Bug Fix: Upgraded Jquery to version 3.5 to fix security issues.
+
+	Bug Fix: USB datalogs were not listed by modified date.
+
+	Bug Fix: Improved web server stability when scanned with network scanner.
+
+4.24   2023/05/26
+
+	Feature Add: Provides support for the E-ACDCLM Rev A boards. E-ACDCLM sensors manufactured after 5/26/23 need firmware version 4.24 or newer to operate.
+
+4.23  	2023/04/19
+	
+	Feature Add: Provides support for editing the Maximum and Minimum Temperature & Dew Point values as displayed in the sensor status bar for the IP sensors. 
+
+	Feature Add: Provides support for integer values and a separate unit for allExternalSensors (allExternalSensorIntValue) in the SNMP MIB files. 
+		Note:  MIB files have been updated to v1.22 to support this change. 
+
+	Feature Add: Provides support for IP Sensor to be displayed on the E-PLSD. 
+
+	Feature Change: Disables old insecure ciphers by default, does not require using the Enable Security setting. 
+
+	Bug Fix: Corrects a problem with the E-4GU-5 modems not responding properly to the Cell provider setups. 
+
+	Bug Fix: Corrects a problem with the IP Sensor status pages displaying "N/A" instead of the sensor value. 
+
+	Bug Fix: Corrects a problem with the IP Sensor graphs not clearing. 
+
+	Bug Fix: Corrects a problem with IP sensor offsets not working. 
+
+	Bug Fix: Corrects a problem with the inability to view the USB Event logs from the web page.
+
+4.22  	2022/12/22
+
+	Feature Add: Provides support for graphing internal sensors. 
+
+	Feature Add: Provides the option to automatically turn OFF the siren/beacon after a specified amount of time. 
+
+	Feature Add: Provides a colored legend for the sensor alert schedule table, the user schedule table, and changes the enabled color to green. 
+
+	Bug Fix: Corrects a problem with sensors on E-1W IP Sensors not graphing. 
+
+	Bug Fix: Corrects a problem with the inability to change the console RS232 baud rate on an E-5D. 
+			The E-5D must be rebooted to implement the changes.
+
+	Bug Fix: Corrects a problem with the Android App not working with versions 3.x and newer software. 
+
+	Bug Fix: Corrects a problem with warning notifications (Email, SMS, SNMP Traps, Syslog) that were received even though only alert notifications was enabled. 
+
+	Bug Fix: Corrects a problem with the SNMP default port which was 0 after restore defaults instead of port 161.
+
+4.21  	2022/11/10
+
+	Feature Add: Provides support for the E-4GU-1 Modem. 
+	
+	Feature Add: Provides the ability to clear the data log on E-16DEL (extended memory version) to allow for faster startups after reboot.
+	
+	Feature Change: Improves the reliability of the web server on public networks.
+	
+	Bug Fix: Corrects a problem with the data log randomly being cleared after a reboot.
+
+	Bug Fix: Corrects a problem with the E-4GU-5 Modem not sending SMS messages reliably.
+	
+	Bug Fix: Corrects a problem with USB Modems not recovering a data connection after a disconnect. 
+
+	Bug Fix: Corrects a problem with IP filter rules not being re-enabled after reboot.
+
+4.20  	2022/09/09
+
+	Feature Add: Provides support for the IP Sensors (E-MICRO/1W) on MODBUS.
+	
+	Bug Fix: Corrects a problem with the Web login randomly not working after reboot.
+	
+	Bug Fix: Corrects a problem with the Beacon and Siren not being powered ON by E-1W IP Sensor alerts.
+	
+	Bug Fix: Corrects a problem in Events where the "Event to Acknowledge" list is empty.
+
+4.19  	2022/08/19
+
+	Feature Change: Provides support for the automatic configuration reload feature on the E-MNG-SH ENVIROMUX Management Software.
+	
+	Bug Fix: Corrects a problem with the Oauth popup for Gmail authentication getting blocked by browser security.
+	
+	Bug Fix: Corrects an intermittent problem with Gmail alert messages not being sent.
+	
+	Feature Change: Limits the test e-mails to users with e-mail address enabled only.
+
+4.18  	2022/05/31
+
+	Feature Change: Changes the XOAUTH feature to work with Google's updated security for Gmail. 
+
+	Feature Change: Changes the datalog e-mail feature to send datalog data even when the user schedule is OFF. 
+	
+	Feature Change: Disables auto fill of passwords when enhanced security is enabled. 
+	
+	Bug Fix: Corrects a problem with the E-xD not capturing images from E-IPCAM-DHNO-V2P camera when digest authentication is used.
+
+4.17  	2022/04/27
+
+	Bug Fix: Corrects a problem with the E-xD sending incorrect Engine ID information when using the SHA authentication protocol for SNMPv3 traps.
+
+	Bug Fix: Corrects a problem with the E-xD not saving SNMPv3 user settings properly.
+
+4.16  	2022/04/12
+
+	Security Update: Add security updates for the web browser and other vulnerabilities.
+
+	Bug Fix: Corrects a problem with using the ":" Character in passwords causing the inability to log into the device.
+
+
+4.15	2022/03/23
+	
+	Feature Change: Provides support for the new internal temperature / humidity sensor.
+
+	Feature Add: Provides support for IP Sensors in the HTTP API feature.
+
+	Bug Fix: Corrects a problem with RJ45 Digital Input alerts not triggering the alert scan list for the E-PLSD.
+
+	Bug Fix: Corrects a problem with the SNMP Aux/Aux2 unit name fields being empty in some cases.
+
+4.14	2022/03/10
+
+	Feature Add: Provides support for MQTT
+	
+		The user can receive sensor values at set intervals or when the sensor goes into alert, even when the ENVIROMUX is behind a firewall or router.
+	
+	Feature Add: Provides the ability to Acknowledge / Dismiss sensor warnings.
+
+	Feature Change: Provides the ability to change the polling rate of the Digital Inputs
+
+	Bug Fix: Corrects a problem with sensor viewing page refresh rates not being set properly.
+
+	Bug Fix: Corrects a problem with contact sensors on RJ45 port triggering Output Relay before alert delay. 
+
+	Bug Fix: Correct a problem with the IP Sensor name not being displayed in e-mail alerts
+
+4.13	2021/12/08
+	
+	Bug Fix: When Radius authentication is enabled, the device would also ask for the client certificate when using HTTPS which would cause the login to fail. This has been corrected. 
+
+4.12	2021/11/19
+	
+	Bug Fix: Corrects a problem where the E-PLSD sensor short names cannot be enabled for edit and display
+
+4.11	2021/11/16
+
+        Feature Add: Provides the option to change the port number for SNMP and SNMP traps.
+
+4.10	2021/11/05
+
+        Bug Fix: Corrects a problem with the Brief E-mail feature not working correctly.
+				   
+4.9     2021/10/26
+
+	Feature Add: Provides the ability to send the datalog in bulk via e-mail.
+		   Note: This feature is not available on the E-16DEL model
+	Feature Add: Provides the ability to execute SSH commands as non-root user on a remote machine.
+
+	Feature Add: Provides the ability to completely disable HTTP when "Enable HTTP Access" is not selected and Network Security is selected.
+
+	Feature Add: Provides the ability to change the root user name for added security.
+
+	Feature Add: Provides the ability to change the SYSLOG port number.
+
+	Feature Add: Provides the ability to send alert emails to multiple e-mail addresses (up to 4 addresses) for each user.
+
+	Bug Fix: Corrects a problem with Digital Input descriptions not being correct on cascaded units. 
+
+	Bug Fix: Corrects a problem with SNMP alerts sending SMS messages without being selected.
+
+	Bug Fix: Corrects a problem with the E-3P480 Apparent Power not displaying the correct range.
+
+4.8     2021/09/17
+	
+	Bug Fix: Corrects a problem introduced in v4.7 with the Digital Input status page not reporting the correct sensor status.
+
+4.7     2021/09/03
+
+	Feature Add: Provides support for the E-PLSD.
+
+	Bug Fix: Corrects a problem with E-4GU-6 modem not sending Chinese characters.
+
+	Feature Improvement: Improved WEB security. 
+
+	Bug Fix: Corrects a problem with the Maps Configuration upload and save function not giving the acknowledgement messages.
+
+4.6	2021/07/19
+	
+	Bug Fix: Corrects a problem with the master unit not handling cascaded unit sensor alerts properly.
+	
+	Bug Fix: Corrects a problem with the Web Server function crashing after a Test SMS message is selected.
+	
+	Bug Fix: Corrects a problem with USB Modems not being loaded properly after a reboot or power cycle.
+
+4.5     2021/06/07
+
+	Feature Add: Provides the ability to turn on or off the E-ACLM-P Power Relay 
+
+	Bug Fix: Corrects a problem with system configurations not importing properly when upgrading from version 2.x software to version 3.x or 4.1 thru 4.4 software. 
+
+	Bug Fix: Corrects a problem with units failing to reboot from the web interface. 
+
+	Feature Change: Change the Text Menu Option name "Delete 3.0 Configuration" to "Delete JSON Configuration" .    The associated behavior of the function remains unchanged.
+
+4.4     2021/05/06
+	
+	Feature Add: Provides support for the E-4GU-6 Modem.
+
+4.3	2021/03/19
+
+	Bug Fix: Corrects a problem with the Web interface service stopping, causing the loss of HTTP/HTTPS access.
+
+
+4.2     2021/03/10
+
+	Bug Fix: Corrects a problem with the Event function "When triggered, acknowledge the following event" not being saved after a reboot.
+
+	Bug Fix: Corrects a problem with SNMP Sensor Events. When string values are selected the entry is not displayed properly while being edited. 
+
+4.1     2021/03/03
+
+	Feature Add: Additional support for the E-MNG-SH software
+
+	    Note: The E-xD will need this update to work properly with the E-MNG-SH.
+
+	Feature Add: Adds Support for temperature & humidity offset on External Sensors.
+	Feature Add: Support for user password restrictions
+	Feature Change: Sending status of IP Devices and sending confirmation status on acknowledge/dismiss of alerts in HTTP API
+	Feature Change. Provides the ability to set the logs in reverse chronological order.
+	Bug Fix: Output Relay status does not show custom status names.
+	Bug Fix: Bad passwords cause the configuration to not load properly.
+	Bug Fix: Deleting a user in the middle of a list and rebooting deletes the following users as well.
+	Bug Fix: Deleting a digital input does not delete its corresponding events.
+	Bug Fix: Email alert message is not sent for SMS delivery failure
+
+4.0	2021/01/20
+
+	Change:  Flash chip on circuit has been changed due to previous chip being at end-of-life.  No change in features from version 3.9.  
+
+	NOTE:  If firmware is upgraded to 4.0 (or newer),  firmware CANNOT be downgraded to earlier version than 4.0. 
+
+3.9	2020/11/23
+
+	Feature Add: Adds support for SNMP sensors in HTTP API.
+        Bug Fix: Corrects a problem with uploading HTTPS certificates.
+	Bug Fix: Corrects a problem with changing user passwords through SSH console.
+
+3.8     2020/11/06
+
+	Feature Add: Adds support for password encryption security. (Support for FIPS 198-1 password security.) Passwords in downloaded configuration file will now be encrypted. 
+	Feature Add: Adds support for one E-RJ8-RS485 Sensor Port Hub on an E-2D and two E-RJ8-RS485 Sensor Port Hubs on an E-5D.
+	Improvement: Corrects a problem with using IP cameras on newer browsers (security issue). 
+	Improvement: Corrects a problem with adding, saving and viewing maps when adding more than 22 sensors.
+	Bug Fix: Corrects a problem with the maximum voltage limit not saved properly on the E-ACLM-3P480. 
+	Bug Fix: Corrects a problem with the Delta / Wye configuration not being properly saved on an E-ACLM-3P480. 
+	Bug Fix: Corrects a problem with initial current transformer values not being correctly saved on an E-ACLM-3P480. 
+	Bug Fix: Corrects a problem with power supply sensors not sending SMS messages on alert with no custom SMS settings. 
+
+3.7     2020/09/28
+
+	Bug Fix: Corrects a problem with incorrect default values when adding a new RJ45 Dry Contact.
+	
+3.6     2020/09/18
+
+	Bug Fix: Corrects a problem with external sensors locking up / not updating after reboot.
+	Bug Fix: Corrects a problem with random characters appearing in the Holiday Schedule.
+
+3.5     2020/09/04
+
+	Feature Change: Enhances the sensor maps normal status color (uses a brighter green) for better visibility.
+	Bug Fix: Corrects a problem with re-loading the IP Sensor configurations during software upgrades.
+
+3.4     2020/08/17
+
+	Feature Add: Adds 4G Modem Data support for all current E-4GU models.
+	Feature Add: Adds sensor mapping support.
+	Feature Add: Adds the ability to redirect to a requested page, if left blank the default is the Summary page.
+	Feature Change: Replaces the Sensor and User schedule with a graphic user interface. 
+	Feature Change: Adds a block addressing mode for MODBUS (instead of the sequential addressing).
+	Feature Change: Adds a custom status messages for the Digital Inputs (instead of just open / closed).
+	Feature Change: Changes the SMTP encryption selection to a drop down menu.
+	Feature Change: Allows the E-RJ8-RS485 connection on any of the 16 sensor ports of an E-16D. 
+                        The limit is still a maximum of 3 sensor hubs.
+	Feature Change: Adds additional support for the E-ACLM-(V)(P) sensor in the E-MNG software.
+	Feature Change: Changes the JSON configuration file to work with the E-MNG-SH software.
+	Feature Change: Changes the internal configuration of the IP Cameras within the firmware (behind the scenes).  
+
+NOTE: The following features / functions will be returned to default condition if the unit is "downgraded" to an earlier version of software: 
+	•  IP Sensor configurations
+	•  SMTP Encryption settings
+	•  User & Sensor Schedule settings
+	•  IP Camera settings.
+
+It is recommended that a configuration backup be performed prior to upgrading to version 3.4
+
+3.3     2020/06/18
+
+	Bug Fix: SMS phone numbers were not imported in versions 3.0 through 3.2 (from versions 2.6x)
+	Bug Fix: Corrects a problem with user passwords getting corrupted in versions 3.0 thru 3.2
+	Bug Fix: Corrects a problem with several settings not being saved or updated when migrating to version 3.x software:
+	
+		•   Internal / External custom SMS messages
+		•   Remote Output Relay; Alert flags
+		•   Contact Sensors (digital inputs); global change status
+		•   Events; remote SSH commands 
+		
+	Bug Fix: Corrects a problem with E-ACLM-(V)(P) sensors not sending the frequency value in e-mail alerts.
+	Bug Fix: Corrects a problem with the IP Sensor external sensor graphs not working.
+
+3.2	2020/05/13
+	
+	Bug Fix: Corrects a problem with user settings for LDAP that were not saved correctly.
+
+3.1     2020/04/30
+
+	Bug Fix: Corrects a problem with Smart Alert Events for E-DI16DO16, Dry Contacts, and IP Sensors becoming corrupted after an update.
+		 This problem originated in firmware version 2.61
+	Bug Fix: Corrects a problem with the E-DCLM-6 configuration becoming corrupted upon updating to firmware version 3.0. 
+	Feature Add: Provides the ability via Text Menu to clear the 3.0 configuration file, reload the 2.x configuration file and convert it automatically to the new 3.x JSON file format.
+		     For instructions, visit www.networktechinc.com/pdf/how-to-reload-2x-configuration-file.pdf, once the unit has been upgraded from version 3.0 to version 3.1.
+		     If you have upgraded directly from version 2.x to version 3.1, this conversion will be done automatically and no further action is necessary.
+
+3.0     2020/04/14
+
+	Feature Add: Adds support for the E-RJ8-RS485 sensor hub.  This is only supported on the E-16D ports 1 thru 3
+	Feature Change: Changes the SNMP structures:
+
+		•   Adds a new "allExternalSensors" group which includes sensor already in "extSensors", "auxSensors", "aux2Sensors",
+		   “remoteInputs”, “remoteRelays”.
+		•   New SNMP MIB file still supports the original sensors groups for External, Aux, Aux2 including Remote DI16DO(R)16
+		    sensor group so that it continues to work with the E-MNG software and other software already integrated. But all
+		    new releases/changes of these software should use the “allExternalSensors”
+		    group as the old groups will be deprecated
+		•   SNMP Traps are moved to "allExternalSensors" eliminating Traps generated on "extSensors", "auxSensors", and "aux2Sensors".
+
+Note:  MIB files have been updated to v1-21 for to support this change. 
+
+	Feature Changes: Changes the MODBUS feature to support the changes to the external sensor structure.
+
+		•   Adds monitoring of the power supplies.
+		•   Adds External Sensor status monitoring.
+		•   Corrects a problem with setting output relays active or inactive via MODBUS.
+		•   Adds the E-DI16DO(R)16 to the external sensors.
+		•   Changes the E-DI16DO(R)16 digital inputs and output relays to be read contiguously instead of hard to locate pre-designated
+		    address blocks for each sensor port.
+		•   Instructions on the changes and additions are in the updated E-xD manual.
+
+	Feature Add: Adds an additional 10 sensors to the E-ACLM-3P480 on the summary web page. This includes the ability to configure alerts.
+		     New sensors include:
+
+		•   Frequency
+		•   Phase A, B, and C Phase Angle
+		•   Phase A, B, and C Power Factor
+		•   Phase A, B, and C Apparent Power
+
+	Feature Add: Adds the ability to display other sensor's values on the E-STHS-LCDW display. This include sensors connected to cascaded units.
+	Feature Add: Adds support for "timeticks" and "gauge32" devices in the SNMP Sensor feature. 
+	Feature Change: Changes the displayed model name of a unit from "ENVIROMUX-xD" to "E-xD". 
+	Feature Change: Changes the E-xD configuration file to a human readable JSON file format. The JSON configuration file can be edited using
+		        any word processor program (ie. Microsoft Word, Wordpad Notepad etc.)
+	Feature Change: Changes the E-ACLM-V/P max voltage displayed on the summary page to 255VAC. 
+	Feature Change: Updates the HTTP API (REST API) for external sensors to include a unique ID for each external sensor and added another
+			position variable. 
+	Bug Fix: Corrects a problem with NTP not syncing time properly on device startup. 
+	Bug Fix  Corrects a problem with Ethernet slave sensor values not updating correctly when the communication is poor. 
+	Bug Fix: Corrects the temperature range for E-1W thermocouple type temperature sensors to -40º to 2500ºC. 
+	Bug Fix: Corrects a problem with non-admin users getting logged out when trying to go to the alerts page. 
+	Bug Fix: Corrects a problem when the datalog stops sending via SYSLOG due to an incorrect gateway. 
+	Bug Fix: Corrects a problem with some German translations.
+
+2.62    2020/03/06
+ 	
+	Feature change: Improves the color contrast when making selections in the menu.
+
+2.61    2019/09/05
+
+	Feature Improvements: Fixes problems with the Modbus feature not supporting all current sensors: 
+				-Improves the mapping for supported sensors.
+				-Adds updated mapping for the E-ACLM-3P480 and E-DCLM6.
+				-Adds Tachometer on Digital Input 1 polling support.
+				-Adds Beacon and Siren status polling support.
+				-Corrects a problem with turning ON and OFF the Output Relays via Modbus.
+
+	Feature Add: Adds the ability to poll remote devices via SNMP 
+
+Note:  MIB files have been updated to v1-20 to support this feature. 
+
+	Bug Fix: Corrects a problem with SNMPv3 Auth and Privacy keys needing to be the same.
+	Bug Fix: Corrects a problem with E-1W when used as an IP Sensor showing incorrect Digital Input values.
+
+2.60    2019/07/31
+
+	Feature Add: Adds support for E-1W IP sensors. Allows up to four (4) E-1W units to be added.  Note: Sensor graphs
+	             cannot be viewed.
+	Feature Add: Adds support for 4G SMS messages using E-4GU-1/2/3 modem.   
+	Feature Add: Added an optional customized banner message for the web login page.  Allows for a maximum message length of
+	             1500 characters.
+	Feature Change: Adds the ability to display the E-ALDS lengths in metric units (Meters).
+	Feature Add: Added support to power cycle digital inputs; Digital Input 1-8 "12V" on an E-16D or "AUX PWR" terminals on an
+		     E-5D or E-2D using the E-MNG software. 
+	
+       		     Note: This feature works in conjunction with E-MNG software version 3.4 or later.
+
+	Improvement: Increases the stability of the monitoring processes in high traffic networks. 
+	Bug Fix: Corrects a problem with the Discovery tool not finding a unit if the subnet information is incorrect.
+		 (This was broken in software version 2.59)
+	Feature Removal: Removes support for the USB-LCD-7 which has been discontinued.
+
+2.59    2019/06/06
+
+	Feature update: Support for updated ACDCLM sensor with improved accuracy for AC Voltage measurements
+	Bug Fix: Corrects a problem with Custom SMS messages not working properly when brief e-mail messages are selected. 
+	Bug Fix: Corrects a problem with a 3G primary route reverting to a secondary route any time network settings are changed. 
+	Bug Fix: Corrects a problem with the Discovery tool not detecting the LAN connection when 3G data is set as the primary route. 
+	Bug Fix: Corrects a problem with the inability to view and download a USB data log file. (This was broken in version 2.58)
+	Bug Fix Corrects a problem with cascaded slave power supply failures not enabling the Beacon / Siren ports. 
+	Bug Fix: Corrects a problem with SNMP traps for the E-DI16DO(R)16 Digital Inputs and Output Relays not being properly defined.
+
+Note: MIB files have been updated to v1-19 for to support this fix. 
+
+	Bug Fix: Corrects a problem with unclean exits from the text menu via SSH or Telnet causing performance issues.
+
+2.58    2019/05/22
+
+	Feature Add: Adds critical process monitoring that will restart a crashed process eliminating the need for a system reboot. 
+	Feature Update: Upgrades SSH to the latest secure algorithms. 
+			Upgrades the TLS library for SSH and HTTPS.
+
+Note: Older versions of SSH clients will no longer work with the E-xD.
+
+	Bug Fix: Corrects a problem with the inability to acknowledge or dismiss a digital input alarm via SNMP
+
+2.57    2019/03/08
+
+        Feature Add: Support for Audible Alert notifications when viewing the Summary web page.
+	Feature Add: Support for Test Email and Test SMS button.
+	Feature Add: Support for overriding SMS format between Plain Text and PDU.
+	Feature Add: Support for customized Power Supply descriptions.
+	Feature Add: Support for customized SMS messages for power supplies.
+	Feature Add: Displays modem signal strength in SSH/RS232 Text Menu.
+	Feature Add: Support to enable and disable all alerts through web page
+		     (Alarm Information Page under Monitoring Menu).
+	Feature Add: Support to enable and disable all alerts through RJ45 contact type sensors and Digital Inputs.
+	Feature Improvement: Adds a record to the event log when an output relay status changes.
+	Bug Fix: Corrects a problem with SMS alerts wherein sensors and IP device alerts did not have the same message format.
+	Bug Fix: Corrects a problem with the custom SMS field not being saved for E-ACLM-3P480 sensor.
+	Bug Fix: Corrects a problem with the displayed values for the E-ACLM-3P480 sensors in the SSH/RS232 Text menu.
+	Bug Fix: Corrects a problem with the SMS Timestamp that was not working with some alerts.
+	Bug Fix: Corrects a problem with Digital Inputs as Sensor values in Smart Alerts not working.
+	Feature change: Updates the German Language translation for better accuracy.
+
+2.56    2018/10/30
+
+        Bug Fix: Corrected reporting of leak location when E-ALDS sensor is used.
+
+2.55    2018/10/23
+
+	Feature Add: Adds support for E-ALDS Addressable Leak Detection Sensor. 
+	Feature Add: Adds the ability to offset the internal temperature and 
+		     humidity sensor values. 
+	Feature Add: Adds the ability to edit custom values for Digital Input and Output Relay alerts. 
+	Bug Fix: Corrects several errors in the SNMP MIB files. 
+	Bug Fix: Corrects a problem with Chinese language phrases in alert e-mails regarding Digital Inputs.
+
+Note: For full SNMP feature support use v1-18 or later MIB files for E-16D,E-5D and  E-2D.
+
+2.54    2018/07/17
+
+	Feature Add: Adds the ability to disable weak SSL cipher suites via web interface and the text menu.
+			This also disables ICMP (ping) responses.
+			This includes the ability to enable/disable weak ciphers via SNMP 
+	Feature Add: Adds DDNS support with several providers including No-IP, Dydns and FreeDNS 
+	Feature Change: Changes the default security for E-MNG and SMS Relay encryption to TLS.
+	Feature Add: Adds support for E-MNG software to support IP Camera HTTP Authentication 
+	Feature Add: Adds support for E-MNG software to support Extended SMS and Extended Schedules
+	Feature Change: Removes support for the E-1W as IP Sensors
+	Bug Fix: Corrects a problem with controlling SMS settings via the text menu and in RADIUS.
+	Bug Fix: Corrects a problem with the Master not updating the status of cascaded Slave units.
+	Bug Fix: Corrects a problem with the MAC ID and Engine ID not being displayed with VLAN Tagging enabled.
+
+Note: For full SNMP feature support use v1-17 or later MIB files for E-16D and E-5D, and v1-16 or later for E-2D.
+
+2.53    2018/04/09
+         
+	Feature Add: Adds support for the E-1W as IP Sensors
+    		    -Up to four E-1W units can be added as IP Sensors.
+    	 	    -This is in addition to the eight E-MICRO units that can be added.
+	Feature Add: Adds GUI interface control for the SSH / Telnet / Serial Interface timeout 
+    		    -Adds event logging of SSH / Telnet / Serial text menu access.
+
+Note: This update will require anyone already using the timeout in version 2.52 to re-configure the timeout in
+      this version. (go to Administration > Network > Server Settings > Console Timeout)
+
+	Feature Add: Adds support for the "Operator" level user in RADIUS.
+	Feature Add: Adds support to add Digital Inputs & Remote Digital Inputs via the Text Menu.
+	Feature Add: Adds the ability to change network settings via SNMP.
+	Feature Add: Adds the ability to perform a system reset (reboot) via SNMP.
+	Feature Add: Adds the ability to display device model, serial number, firmware revision, hardware revision, and
+		     manufacturer information via SNMP.
+	Bug Fix:  Corrects a problem with adding too many Smart Alerts when "Add a Smart Alert" is selected.
+
+Note: For full SNMP feature support use v1-16 or later MIB files for E-16D and E-5D, and v1-15 or later for E-2D.
+
+2.52    2018/02/06
+         
+	Feature Add: The ENVIROMUX now supports 802.1Q VLAN tagging which can be used on managed switches to get
+		     more bandwidth and improved security
+	Feature Add: Adds the ability to control the siren and beacon ports on E-5D and E-16D directly via SNMP. 
+
+Note: For this SNMP feature support use v1-15 or later MIB files for the E-5D and E-16D.
+
+	Bug Fix: Corrects a problem with the inability to add new Smart Alerts. 
+		 (This was broken in version 2.51)
+	Bug Fix: Corrects a problem with Events associated with IP Devices and RJ45 Digital Inputs not working properly. 
+	Bug fix: Corrects a problem with Internal Sensor Alerts not working on Cascaded units.
+
+2.51    2018/01/19
+         
+	Feature Add: Adds support for JSON API to poll sensors using a HTTP or curl command. 
+	Feature Add: Adds Support for an "Operator" User with limited administrative permissions. 
+	Feature Add: Adds support for a timeout feature on the Text Menu SSH, Telnet, and Serial connection.
+		     This is fixed at 10 Minutes.
+	Feature Add: Adds the ability to query and display the firmware version via SNMP. 
+	Feature Add: Adds the ability to use the E-xD as a SMS gateway via SNMP. 
+	Feature Add: Adds the ability to edit the Internal and External Sensor alert thresholds via SNMP 
+	Feature Add: Adds support for support for sensor based Smart Alert bypassing the sensor alerts selections and events. 
+	Feature Add: Adds support to generate an alert when a sensor is disconnected. 
+	Improvement: Makes "Auto Acknowledge" the default selection for sensor critical alert configurations.  This is for
+		     Internal Sensors, External Sensors, Digital Inputs, and IP Devices
+	Bug Fix: Corrects a problem with MIB file error on syntax checks. 
+	Bug Fix: Corrects a problem with power supply failure reporting via SYSLOG.
+
+	Note: For full SNMP feature support use v1-14 or later MIB files.
+
+2.50    2017/12/12
+         
+	Feature Add: Adds support for 1.2 million data log entries on the expanded nand flash model E-16DEL
+
+     	The data log will not be lost after a power cycle or restart of the E-16DEL
+
+	Feature Add: Increases the standard model's data log to 1724 entries. 
+	Bug Fix: Corrects a problem with “Cycle Sensor Power” selection not working.
+
+2.48    2017/11/14
+         
+	Bug Fix: Corrects a problem with updating the E-16D software via Web 
+        Update.
+
+2.47    2017/10/12
+
+	Feature Add: Adds the ability to configure up to 4 SMS numbers per user. 
+	Feature Add: Adds SNMP set commands to acknowledge or dismiss Event alerts.
+
+	Note: This requires the use of v1-12 or later MIB files.
+
+	Feature Add: Improves the way flash drives are mounted or un-mounted from the E-xD. 
+	Feature Add: Adds the ability to store and view data logs on a flash drive. 
+	Feature Add: Adds the ability to store view IP Camera images on a flash drive.  
+	Feature Add: Adds the ability to save images from an IP Camera using a port other than Port 80. 
+	Improvement: Improves the User and Sensor Scheduling feature. 
+
+	Note: Any scheduling feature settings already configured will be lost. These will need to be re-entered after this update.
+
+	Change:  SNMP is now enabled by default. 
+	Bug Fix: Corrects a problem with losing the configuration ID of the E-STHSB. 
+	Bug Fix: Corrects a problem with incorrect trap OIDs on the E-5D internal sensors. 
+	Bug Fix: Corrects a problem with the web server locking up by the Qualys security scanner. 
+	Bug Fix: Corrects a problem with LDAP / RADIUS settings not being properly displayed. 
+
+2.46    2017/07/24
+
+	Feature Add: Adds support for monitoring total KWH on the 
+		     E-ACLM-3P480. 
+			Note: This requires a firmware update to the ENVIROMXUX-ACLM-3P480 (update released on 6/26/17,
+		        must be done at factory).
+	Bug Fix: Corrects a problem with losing the configuration on an 
+		 E-DI16DO16 if the sensor is disconnected. 
+	Bug Fix: Corrects a problem with Smart Alert Events not sending alert e-mail messages. 
+	Bug Fix: Corrects a problem with mounting a flash drive at startup or reboot. 
+	Improvement: Improved connectivity with the E-MNG Management software.
+
+2.45    2017/03/30
+
+	Feature Add: Adds support for IP camera authentication to send camera images via e-mail.
+	Feature Add: Adds additional RADIUS support that allows updates to already existing users.
+		     An updated dictionary.nti file (found on our website) is also required.
+	Improvement: Corrects a problem with Smart Alerts for cascaded RJ45 digital inputs.
+	Bug Fix: Corrects a problem with missing SNMP v1 trap OIDs.
+
+2.44    2017/02/09
+
+	Feature Add: Adds support for RADIUS Authentication
+	Improvement: Changes the Alert E-Mail messages for Digital Inputs. 
+		     Changes the messages to "Digital Input is in alarm status" and "Digital 
+      		     Input returned to normal status"
+ 
+2.43    2017/01/13
+
+	Feature Add: Adds support for the E-ACLM-3P480 3-Phase Power Monitor
+	Feature Add: Adds support for IP camera HTTP authentication. 
+	Bug Fix: Corrects a problem with adding slave unit sensor Smart Alert Events.
+	Bug Fix: Corrects a problem with the System identifying itself properly as a 
+		 E-16D single power unit during a power-up or reboot.
+
+	SNMP support for the E-ACLM-3P480 requires mib file version 1.11 or later. 
+
+2.42    2016/11/18
+
+	Feature Add: Adds the ability to download the data log in CSV format
+	Feature Add: Adds the ability to send e-mails in HTML format.
+	Bug Fix: Corrects a problem with configuring the digital inputs on cascaded slave units.
+	Bug Fix: Corrects a problem with the “Tach Sensor” function (used for E-WSS Wind Speed Sensor)
+		 on the E-16D Digital Input 1 that was not working.
+	Bug Fix: Corrects a problem with sensor graphs not being cleared properly.
+
+2.41    2016/09/09
+
+	Feature Add: Adds the ability to view Sensor Warnings (Non-Critical Threshold Values) via SNMP
+
+2.40    2016/08/31
+
+	Improvement: Improves Sensor graphing by decreasing the margin for better resolution.
+	Bug Fix: Corrects a problem with the SMS Relay function not working.
+	(This was broken in version 2.34)
+	Bug Fix: Corrects a problem with E-DCLM-6 sensors not being graphed on E-2D and -5D units. 
+	Bug Fix: Corrects a problem with port identification of the E-DCLM-6. 
+	Bug Fix: Corrects a problem with Digital Input status not being correctly reported upon start-up or reboot.
+
+2.39    2016/08/11
+
+	Bug Fix: Corrects a problem with sending SMS alert messages in German. 
+	Bug Fix: Corrects a problem where E-DCLM-6 sensors are not being graphed.
+	Bug Fix: Corrects a problem that causes the serial interface to randomly become uncontrollable. 
+	Bug Fix: Removes checkbox option for “Enable Siren/Beacon” from sensor configuration page for
+		 E-2D (this is not a feature on this model) 
+	Bug Fix: Corrects a problem in which the E-DI16DO16 is not initialized to normal status
+		 after performing a reboot of the E-xD.
+	Bug Fix: Corrects a problem in alert email where DC current value was not reported.
+
+2.38    2016/07/05
+
+	Bug Fix: Corrects a problem with IP Sensor alerts not activating the beacon or siren ports. 
+	Bug Fix: Corrects a problem with smart alerts not deactivating the associated output relay if
+		 acknowledged or the alert returns to normal.
+	Bug Fix: Corrects a problem with adding an event for digital inputs or IP devices where the
+		 configuration page is not correct for the type of sensor being configured. 
+	Feature Add: Adds the ability for non-administrative users to view sensor graphs. 
+	Improvement: Corrects a problem where E-ACDCLM or E-DCLM-6 sensors are not being graphed. 
+	Improvement: Changes the display length of the e-mail subject line for sensor alerts to 60 characters.
+
+2.37	2016/06/10
+
+	Feature Change: Improvements made to default settings of E-DCLM-6 when one is connected.
+
+2.36	2016/04/18
+
+	Bug Fix: Corrects a problem with the serial port showing incorrect characters after logging into the text menu.
+	(This was broken in version 2.35)
+	Bug Fix: Corrects a problem with the inability of the IP Sensor alerts to control the Beacon or Siren ports.
+
+2.35	2016/03/30
+
+	Adds support for E-ACLM-P18 AC Line Monitor.
+	Adds support for the E-DCLM-6 sensor
+	Feature Change: Adds TLS V1.2 and removes SSL for added security.
+
+	This change creates 2 issues for users of the E-MNG Monitoring System Management Software:
+
+		TLS Ver 1.2 requires the use of Java version 1.8 or newer
+		Java version 1.8 eliminates SSL also which means the E-MNG
+		software will no longer communicate with the old model E-SEMS-16(U) units
+
+	Feature Change: Adds the ability to enable or disable the Output Relay Interlock.  
+			You can now choose to associate a single output relay with multiple alert sources if you want.
+	Bug Fix: Corrects a problem with displaying the AC Current of an E-ACDCLM sensor, this was broken
+		 in firmware version 2.34
+
+
+Note: If your network includes the use of the E-MNG Management Software and you are managing both old model
+(E-SEMS-16/-16U) and newer model (E-16D) units with it, you may not want to install this firmware upgrade.
+See changes detailed above.
+
+2.34	2016/02/22
+
+	Bug Fix: Corrects several problems with alerts from Digital Inputs on Cascaded units, and associating
+		 Cascaded unit Output Relays.
+
+2.33	2016/01/22
+
+	Bug Fix: Corrects a problem with IP Devices causing incorrect reporting of alerts.
+	Feature Add: Adds support for E-STHS-LCD
+	Feature Add: Adds support for the E-ACDCLM. 
+	Feature Add: Adds the ability to change the SYSLOG facility (Local0 to Local7) 
+	Feature Add: Changes the size of the sensor lists in the Text Menu to fit longer sensor names. 
+	Feature Change: Changes the “Add Associated Output Relay” drop list to only include those not currently in use.
+
+Note: If your configuration already has multiple associations for a single output relay, those associations will remain
+in place after this firmware update. However,  you will not be able to configure more of them, and if you remove a multiple
+association after the update, you will not be able to re-instate it. If you need to configure an output relay to change
+state as a result of multiple sensor alert conditions, you can still configure Events and Smart Alerts to change a relay
+state based on multiple sensor alert conditions.
+
+	Bug Fix: Corrects a problem with sending e-mails from remote output relays (DI16DO16 relays) 
+	Bug Fix: Corrects a problem with the RTD sensor not changing the display to “ºF” when selected.
+
+2.30	2015/09/22
+
+
+
+	Bug Fix: Corrects a problem causing the failure of sensor graphs after 8 to 14 days of recording.
+
+	Bug Fix: Corrects a problem with group assignments not working properly on Remote Output Relays.
+
+	Bug Fix: Corrects a problem with "Invalid event ID" messages displayed in the events configuration page.
+
+
+
+2.29	2015/08/27
+
+
+
+	Feature Add: Adds a separate Alert Summary page for showing only sensors that are in alert state.
+
+	Feature Add: Adds alert configuration for ACLM-V/P Frequency measurement.
+
+	Feature Add: Adds monitoring of the Power Supply Status to the Text Menu.
+
+	Bug Fix: Corrects a problem with SNMP functionality. Connection to some DNS servers caused SNMP process failure.
+
+	Bug Fix: Corrects a problem with data logging if an NTP server sends erroneous time.
+
+
+
+Note: In order for the E-xD to add the Frequency sensor of the E-ACLM-V/P to the list of sensors, any
+
+previously installed E-ACLM-V or ACLM-P must first be deleted from the E-xD Summary page (using the
+
+Web interface). Within 30 seconds the E-xD will re-sense the E-ACLM-V/P and will include the Frequency
+
+sensor in the list of sensors. All applicable sensors included with the E-ACLM-V/P (including Frequency
+
+Sensor(s)) will then be available for configuration.
+
+
+
+2.28	2015/07/31
+
+
+
+	Feature Add: Adds higher security authentication for Gmail email accounts 
+
+                    (XOAUTH2)
+
+	
+
+2.27	2015/03/10
+
+
+
+	Feature Add: Add the ability to send SMS messages when the Event & Data logs are 90% full.
+
+	Bug Fix: Corrects a problem with Non-Admin user not being able to Acknowledge or
+
+		 Dismiss sensor alerts.
+
+
+
+2.26	2015/02/11
+
+
+
+	Feature Add: Adds ability to send E-mail / Syslog / and SNMP alerts when the 
+
+       		     modem is lost or fails to send SMS.
+
+
+
+2.25	2015/01/14
+
+
+
+	Feature Add: Adds a configurable delay of notification for lost slave connectivity (2 to 20 sec.).
+
+	Feature Add: Adds the ability to turn ON and OFF Output Relays via IP Device alerts.
+
+	Feature Add: Adds support for Modbus address 1 and 255.
+
+	Feature Add: Adds graphing of slave unit sensors to the slave unit web page.
+
+	Improvement: When an E-S60VDC is connected, the default values on channel 2
+
+		     will now also apply to channel 1.
+
+	Security Fix: Provides a fix for the Padding Oracle On Downgraded Legacy Encryption
+
+		      (Poodle) Vulnerability.
+
+	Bug Fix: Corrects a problem with sensor scheduling when sensor alerts are still
+
+		 sent outside the active window.
+
+	Bug Fix: Corrects a problem with non-administrative users getting "bumped" to the login screen.
+
+	Bug Fix: Corrects a problem with the DNS Timeout setting not being properly saved.
+
+
+
+2.24	2014/11/26
+
+
+
+	Feature Add: Adds support for IP Sensors (E-MICRO-T(RHP)
+
+	Feature Add: Adds customizable SMS messages for all sensor types.
+
+	Bug Fix: Corrects a problem with sensors from cascaded units not
+
+		 turning on the Siren and Beacon.
+
+	Bug Fix: Corrects a problem with IP Devices not working properly when using Hostnames.
+
+	Bug Fix: Fixes the problem with the E-16D units shutting down instead of remaining 
+
+		 ON in battery mode when power is lost.
+
+
+
+2.23	2014/10/27
+
+
+
+	Feature Add: Adds support for the E-RTDT-1562 sensor
+
+
+
+2.22	2014/10/09
+
+
+
+	Feature Update: Adds SSL security updates
+
+	Feature Add: Adds graphing for the E-WSS wind speed sensor on Digital 
+
+        	     Input 1
+
+	Feature Add: Adds support for the E-STHSM temperature / humidity 
+
+        	     sensors
+
+
+
+2.20	2014/08/25
+
+
+
+	Feature Add: Adds the ability to turn OFF sensor graphing
+
+	Bug Fix: Corrects a problem with graphing sensor data when using IE 6, 7, & 8, 
+
+        	 speeding up the presentation of the graph in the browser.
+
+	Feature Add: Adds the offset correction factor for the Industrial Temperature 
+
+                     Sensor to improve sensor accuracy
+
+
+
+2.19	2014/07/28
+
+
+
+	Bug Fix: Corrects a problem with sending SMS messages from an 
+
+		E-3GU-IND modem on an E-2D or E-5D.
+
+
+
+2.18	2014/07/01
+
+
+
+	Feature Add: Adds support for the E-STS-PRC
+
+	Bug Fix: Corrects a problem with SNMP Traps sending the correct status
+
+		 value when returning to normal from an alert.
+
+
+
+2.16	2014/05/08
+
+
+
+	Feature Add: Adds German language support.
+
+	Feature Add: Adds System Information reporting via SNMP including CPU 
+
+		Usage and Memory Usage through the use of the UCD-SNMP-MIB file from 
+
+		UC, Davis which is maintained by the snmp-project.
+
+	Bug Fix: Correct a problem with controlling Remote Output Relays via SNMP.
+
+
+
+2.15	2014/03/24
+
+
+
+	Feature Add: Makes DHCP the default network setting.
+
+		If no DHCP server is found, ENVIROMUX will revert to the static 
+
+			network settings.
+
+	Feature Add: Adds configurable DNS timeout (for slow E-mail servers). 
+
+	Feature Add: Adds advanced LDAP settings for Microsoft Active Directory.
+
+	Feature Add: Adds support for the Trendnet TV-IP672PI IP Camera.
+
+	Bug Fix:  Corrects a problem with turning ON the Beacon / Siren from a 
+
+		remote digital input.
+
+	Bug Fix: Corrects a problem with the MIB files not compiling with some MIB 
+
+		browsers.
+
+	Bug Fix: Changes the filtering of the Digital Inputs for the E-2D 
+
+		and E-5D to prevent false alerts from the E-SDS smoke 
+
+		detector.
+
+
+
+2.14	2014/02/07
+
+
+
+	Feature Add: Adds support for the new Ipad APP – E-APP-IPAD
+
+	Feature Add: Adds the ability to load a custom web server X509 certificate. 
+
+	Feature Add: Adds support for client certificate verification. 
+
+	Bug Fix: Corrects a problem with the system adding a DI16DO16 
+
+		configuration where there isn't any connected 
+
+	Bug Fix: Corrects a problem with the E-MNG management software in 
+
+		that the software was not being able to read the sensor group names 
+
+	Bug Fix: Corrects a possible problem with sending SMS messages from USB 
+
+		Modems. 
+
+	Bug Fix: Corrects a problem with sensor and user scheduling.
+
+
+
+2.13	2013/12/16
+
+
+
+	Feature Add: Adds the ability to control the output relays via SNMP.
+
+	Feature Add: Changes the sensor schedule function to turn OFF associated 
+
+		relays when the sensor is not active
+
+
+
+2.12	2013/12/03
+
+	Bug Fix: Corrects a problem with the E-3GU-IND modem randomly 
+
+		losing communication with the ENVIROMUX Monitoring System.
+
+
+
+2.11	2013/11/21
+
+
+
+	Feature Add: Adds a separate return to normal delay in the Smart Alerts.
+
+		This will allow for longer delays when associating Output Relays.
+
+	Feature Add: Adds the ability to send remote commands via SSH.
+
+		This feature is in Events and Smart Alerts section.
+
+	Feature Add: Adds the ability to name sensor groups. 
+
+	Feature Add: Adds the ability to filter the information sent in an E-mail.
+
+	Feature Add: Adds support for the TP-Link TL-SC3230N IP camera image 
+
+		captures.
+
+	Bug Fix: Corrects a problem with the serial modem communication on the 
+
+		E-5D.
+
+	Bug Fix: Corrects a problem Remote Serial Port on the E-5D where 
+
+		the user could connect to the device on the remote serial port but 
+
+		could not communicate with the device.
+
+	Bug Fix: Corrects a problem with sensor scheduling on the Digital Inputs.
+
+	Bug Fix: Corrects a problem with a Dew Point sensor alert triggering the 
+
+		Fault LED or the Beacon / Siren.
+
+	Bug Fix: Corrects a problem with the Dew Point sensor graphing when the 
+
+		sensor is connected to a port other than port 1.
+
+
+
+2.10	2013/10/25
+
+
+
+	Feature Add: Adds support for the E-DUST sensor.
+
+	Change: Disables SSLV2.0 which is a security risk.
+
+	Improvement: Corrects a problem that occurs when sensor thresholds are 
+
+		changed from the management software.
+
+	Improvement: Corrects a problem with time zones that have 30 Minute 
+
+		settings (ie. +5:30 Time Zone).
+
+	Improvement: Corrects a problem with displaying sensor graphs in Internet 
+
+		Explore 6,7 and 8.
+
+	Bug Fix: Corrects a problem with the E-3GU-IND modem which was 
+
+		broken in version 2.5.
+
+
+
+2.9	2013/09/13
+
+
+
+	Feature add: Adds support for Japanese language selection.
+
+	Feature add: Adds ability to view power supply status from mobile page.
+
+	Feature add: New main menu link provided to display power supply status 
+
+		summary.
+
+	Bug Fix: Fixed a bug where internal humidity was wrong when internal 
+
+		temperature was displayed in Fahrenheit and correct when displayed in 
+
+		Centigrade.
+
+
+
+2.8	2013/08/13
+
+
+
+	Feature add: Adds support for Cascading
+
+		Up to Four Slaves can be either serial (RS485) or Ethernet cascaded
+
+		E-2D and E-5D can only be cascaded using Ethernet method
+
+		Maximum Serial Cable Length using Cat5e cable is 4000ft.
+
+		Requires a 100Ω Terminating Plug for the last serial cascaded unit
+
+	Feature add: Adds Modbus TCP support 
+
+	Feature add: Adds support to assign sensors to multiple groups 
+
+	Feature add: Adds schedule control to the sensors to control when sensors 
+
+		will respond to alert conditions 
+
+	Feature add: Adds Sensor recorded value Graphing 
+
+	Feature add: Adds support for remote serial port via SSH 
+
+	Feature add: Adds Event Log entries for SMS message status 
+
+	Feature add: Adds support for non-numeric characters in the SMS phone 
+
+		numbers
+
+	Bug Fix: Corrects a memory leak in the Kernel
+
+
+
+2.7	2013/06/03
+
+
+
+	Feature Add: Adds support for the E-STHS-IND Temperature / humidity 
+
+		sensor.
+
+	Feature Change: Makes the E-WSS Wind Speed sensor the default 
+
+		association when the Tachometer on Digital Input 1 is added.
+
+	Feature Change: Makes the default IP address 192.168.1.21 for all 
+
+		E-xD units.
+
+
+
+
+
+2.6	2013/05/15
+
+
+
+	Feature Add: Adds support for a tachometer (i.e. E-WSS Wind Speed 
+
+		Sensor) to be connected to Digital Input 1.
+
+
+
+
+
+2.5	2013/05/02
+
+
+
+	Feature Add: Adds support for the E-STHS-PRC precision 
+
+		temperature / humidity sensor.
+
+	Feature Add: Adds support for the E-3G data connection.
+
+	Bug Fix: Adds support for the new flash memory.
+
+	Bug Fix: Corrects a problem with Dew Point sensor settings on the web page 
+
+		and in the text menu.
+
+
+
+2.4	2013/03/11
+
+
+
+	Feature Add: Adds support for the E-TAB7  7 Inch Tablet.
+
+	Feature Add: Added SMS relay feature- an E-xD unit with a GSM modem 
+
+		can be used by other E-xD units to send SMS messages.
+
+	Bug Fix: Corrects a problem with serial modem support on the E-16D.
+
+
+
+2.3	2013/02/14
+
+
+
+	Feature Add: Adds Support for the E-SDA Smoke Detector.
+
+	Bug Fix: Corrects a problem with configuring Output Relays.
+
+	Bug Fix: Corrects a problem with the Power Supply Alerts associating an 
+
+		Output Relay.
+
+	Bug Fix: Corrects a problem with SNMP trap OID's.
+
+
+
+2.1	2013/02/05
+
+ 
+
+	Feature Add: Adds Support for the E-2D(B) Rev C boards only
+
+	The earlier versions of the E-2D(B) are not compatible with this 
+
+		version of firmware.
+
+
+
+TO IDENTIFY E-2D MADE WITH REV C PCB: These units include two 9VDC 
+
+power input jacks instead of one.
+
+
+
+	Feature Add: Adds the ability for to save camera images to the flash drive.
+
+	Bug Fix: Fixed minor bugs related to event settings.
+
+
+
+2.0	2013/01/11
+
+
+
+	Feature Add: Adds Support for the E-5D(B); This is now consolidated 
+
+		software to be used for the E-5D and E-16D.
+
+	Feature Add: Adds Support for the DI16DO16(R) Digital Input / Output 
+
+		Expander.
+
+	Feature Add: Adds the ability for one Event to acknowledge another Event.
+
+
+
+1.3	2012/12/14
+
+
+
+	Feature Add: Adds RS232 serial modem support (model E-16D-RS only).
+
+	Feature Add: Adds a pop-up confirmation window when deleting sensors.
+
+
+
+1.2	2012/11/19 
+
+
+
+	Feature Add: Adds support for the E-MNG Server Environment 
+
+		Monitoring Systems Management Software
+
+	Feature Add: Adds TLS support to email SMTP server settings
+
+	Bug Fix: This update also corrects a problem with adding double-function 
+
+		sensors when hot-plug is detected (the sensor in the next connector was 
+
+		being removed from the list).
+
+
+
+1.1	2012/10/10
+
+
+
+	Feature Add: Adds a +12V interrupt to the Digital Inputs.   This allows the 
+
+		user to momentarily power OFF a device connected to a Digital Input
+
+	Feature Add: Adds a Restore Defaults push button
+
+	Feature Add: Adds a Beacon & Siren Alarm Reset/Test push button
+
+
+
+1.0	2012/08/13 
+
+
+
+	Initial Revision
+

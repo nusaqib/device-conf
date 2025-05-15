@@ -1,0 +1,99 @@
+E-2D MIB FILE RELEASE NOTES
+Last Update 2024/08/15
+
+This listing provides the version number of the NTI E-2D 
+Environment Monitoring System MIB file, the date of the release, and a summary 
+of the changes in that release.
+
+1.23    2024/08/15
+
+	Feature Add: Added new integer value for IP Sensor Rebooter Types, Ping Target, and OutRelay
+
+1.22    2023/04/19
+
+	Feature Add: Added separate integer value OID and unit OID for all external sensors
+
+1.21    2020/04/14
+
+	Feature Add: Added separate section to include all external sensors
+
+1.20    2019/09/05
+
+	Feature Add: Adds the ability to poll remote devices via SNMP
+
+1.19    2019/06/06
+
+        Bug Fix: Defined remote digital input and remote relay traps
+
+1.18    2018/10/23
+         
+	Feature Add: Added support for E-ALDS Sensor 
+        Bug Fix: Fixed MIB file errors
+
+1.16    2018/07/18
+
+	Feature Add: Added support to enable network security through SNMP
+
+1.15    2018/04/09
+        
+	Feature Add: Added support for viewing more System Information
+ 	Feature Add: Added support for viewing and configuring Network Settings
+
+1.14    2018/01/19
+        
+	Feature Add: Supports the ability to query and display the firmware version via SNMP. 
+	Feature Add: Supports the ability to use the E-xD as a SMS gateway via SNMP. 
+	Feature Add: Supports the ability to edit the Internal and External Sensor alert
+		     thresholds via SNMP 
+	Bug Fix: Corrects a problem with MIB file error on syntax checks. 
+
+1.12    2017/10/12
+        
+	Feature Add: Change alert/event status registers to be read-write
+
+1.11	2017/01/13
+
+	Feature Add: Added type definitions for E-ACLM-3P480 sensors  
+
+1.10	2016/09/09
+
+	Feature Add: Added OID definitions for non-critical alert thresholds   
+	
+1.09	2016/03/30
+
+	Feature Add: Added Auxiliary 2 sensors    
+	Feature Add: Added ACDC Line Monitor sensors (E-ACDCLM)
+
+1.07	2014/11/26
+
+	Feature Add: Adds support for IP Sensors (E-MICRO-TRHP)
+
+1.06	2014/03/24
+
+	Fix: Fixed compile errors or warnings
+
+1.05	2013/12/16
+
+	Feature Add: Adds the ability to control the output relays via SNMP.
+	Fix: Fixed attributes for OIDs.
+
+1.04	2013/05/09
+
+	Feature add: Changes to support Tach sensor on Digital Input 1.
+
+1.03	2013/04/25
+
+	Feature add: Changes for high accuracy temperature humidity sensor.
+
+1.02	2013/02/12
+
+	Feature add:  Added Smoke Detectors.
+	Fix: Corrected OID numbers for SNMP Traps.
+
+1.01	2012/11/19
+
+	Feature Add: Added Events and Smart Alerts.
+
+1.00	2012/10/01
+
+	Initial Revision
